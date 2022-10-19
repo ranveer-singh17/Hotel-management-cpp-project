@@ -6,6 +6,7 @@ pipeline {
             steps {
                 powershell '''g++ -o f HotelManagementProject.cpp'''
                 powershell '.\\f.exe'
+                powershell 'set +e'
             }
         }
     }
