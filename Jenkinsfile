@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                powershell '''g++ -o program HotelManagementProject.cpp
-                .\\program.exe'''
+                powershell '''g++ -o program HotelManagementProject.cpp'''
+                powershell '''.\\program.exe'''
             }
         }
     }
