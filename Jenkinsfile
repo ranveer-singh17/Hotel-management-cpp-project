@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                bat 'gcc -o f HotelManagementProject.cpp'
+                bat 'g++ -o f HotelManagementProject.cpp'
                 bat './f.exe'
                 
             }
